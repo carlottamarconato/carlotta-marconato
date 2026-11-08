@@ -1,0 +1,99 @@
+/* Colori del sito */
+:root{
+  --notte:#12263a;
+  --mare:#2a7f8e;
+  --limone:#f2c230;
+  --schiuma:#f3f7f8;
+  --testo:#1d2b36;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Trebuchet MS",Verdana,sans-serif;
+  background:var(--schiuma);
+  color:var(--testo);
+  line-height:1.65;
+}
+/* Intestazione e menu */
+header{
+  background:var(--notte);
+  color:var(--schiuma);
+  padding:28px 8% 0;
+}
+header h1{
+  color:var(--schiuma);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:2.6rem;
+  margin:0 0 4px;
+  letter-spacing:.5px;
+}
+header p{margin:0 0 18px;color:#b9cdd6}
+nav a{
+  display:inline-block;
+  color:var(--schiuma);
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:6px 6px 0 0;
+}
+nav a:hover{background:var(--mare)}
+nav a.attiva{background:var(--schiuma);color:var(--notte);font-weight:bold}
+/* Contenuto */
+main{max-width:980px;margin:0 auto;padding:40px 24px 60px}
+h2{font-family:Georgia,serif;color:var(--notte);font-size:1.8rem;margin-top:0}
+h3{color:var(--mare);margin-bottom:4px}
+.due-colonne{display:flex;gap:36px;align-items:flex-start;margin-bottom:40px}
+.due-colonne > div{flex:1}
+img{max-width:100%;display:block;border-radius:8px}
+.foto-web{border:4px solid var(--limone)}
+.foto-locale{border:4px solid var(--mare)}
+/* Fondo pagina */
+footer{
+  background:var(--notte);
+  color:#b9cdd6;
+  text-align:center;
+  padding:22px;
+  font-size:.9rem;
+}
+/* Banner privacy (creato da js/script.js) */
+#privacy-banner{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  background:var(--notte);
+  color:var(--schiuma);
+  padding:16px 8%;
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:space-between;
+  border-top:4px solid var(--limone);
+  z-index:10;
+}
+#privacy-banner button{
+  background:var(--limone);
+  color:var(--notte);
+  border:0;
+  padding:10px 22px;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
+/* Schede delle opere (orana_maria.html) */
+.scheda{
+  display:flex;
+  gap:32px;
+  align-items:center;
+  border-left:6px solid var(--mare);
+  padding:8px 0 8px 22px;
+  margin:32px 0;
+}
+.scheda-testo{flex:1}
+.scheda-testo p{margin:4px 0}
+.scheda img{width:300px;flex-shrink:0}
+.didascalia{font-size:.9rem;color:#5b7080;margin-top:6px}
+.scheda-immagini{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex-shrink:0;
+  width:300px;
+}
